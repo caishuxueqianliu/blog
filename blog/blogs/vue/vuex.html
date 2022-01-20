@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>vuex状态管理 | liuhao</title>
+    <meta name="generator" content="VuePress 1.8.2">
+    <link rel="icon" href="/blog/favicon.ico">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    
+    <link rel="preload" href="/blog/assets/css/0.styles.5bfee496.css" as="style"><link rel="preload" href="/blog/assets/js/app.8df89506.js" as="script"><link rel="preload" href="/blog/assets/js/3.8945a4b1.js" as="script"><link rel="preload" href="/blog/assets/js/1.a26389cc.js" as="script"><link rel="preload" href="/blog/assets/js/41.b9c88554.js" as="script"><link rel="prefetch" href="/blog/assets/js/10.bf334fa4.js"><link rel="prefetch" href="/blog/assets/js/11.fe9cb147.js"><link rel="prefetch" href="/blog/assets/js/12.f42de336.js"><link rel="prefetch" href="/blog/assets/js/13.5e6239b2.js"><link rel="prefetch" href="/blog/assets/js/14.74a4dd2d.js"><link rel="prefetch" href="/blog/assets/js/15.e3458226.js"><link rel="prefetch" href="/blog/assets/js/16.af767707.js"><link rel="prefetch" href="/blog/assets/js/17.f82fa8fe.js"><link rel="prefetch" href="/blog/assets/js/18.a6c8372d.js"><link rel="prefetch" href="/blog/assets/js/19.66398941.js"><link rel="prefetch" href="/blog/assets/js/20.227ea9d4.js"><link rel="prefetch" href="/blog/assets/js/21.6e433315.js"><link rel="prefetch" href="/blog/assets/js/22.8e782ff7.js"><link rel="prefetch" href="/blog/assets/js/23.d6c00a9b.js"><link rel="prefetch" href="/blog/assets/js/24.59afbd8a.js"><link rel="prefetch" href="/blog/assets/js/25.d5ebb347.js"><link rel="prefetch" href="/blog/assets/js/26.590ac7d3.js"><link rel="prefetch" href="/blog/assets/js/27.7d4b5258.js"><link rel="prefetch" href="/blog/assets/js/28.1c572004.js"><link rel="prefetch" href="/blog/assets/js/29.028df2b1.js"><link rel="prefetch" href="/blog/assets/js/30.f3d287eb.js"><link rel="prefetch" href="/blog/assets/js/31.075d707d.js"><link rel="prefetch" href="/blog/assets/js/32.d58f1e2d.js"><link rel="prefetch" href="/blog/assets/js/33.cb45a028.js"><link rel="prefetch" href="/blog/assets/js/34.c8166743.js"><link rel="prefetch" href="/blog/assets/js/35.bad7f38e.js"><link rel="prefetch" href="/blog/assets/js/36.cf2ffd8e.js"><link rel="prefetch" href="/blog/assets/js/37.7b699c23.js"><link rel="prefetch" href="/blog/assets/js/38.1b311391.js"><link rel="prefetch" href="/blog/assets/js/39.ec81dd6b.js"><link rel="prefetch" href="/blog/assets/js/4.df1b9e09.js"><link rel="prefetch" href="/blog/assets/js/40.08a47445.js"><link rel="prefetch" href="/blog/assets/js/42.eabaa88c.js"><link rel="prefetch" href="/blog/assets/js/43.2a6ad33e.js"><link rel="prefetch" href="/blog/assets/js/44.8bf83ee6.js"><link rel="prefetch" href="/blog/assets/js/45.f52a0f01.js"><link rel="prefetch" href="/blog/assets/js/46.52244111.js"><link rel="prefetch" href="/blog/assets/js/47.973f2d1c.js"><link rel="prefetch" href="/blog/assets/js/48.bd5b4448.js"><link rel="prefetch" href="/blog/assets/js/49.005a011c.js"><link rel="prefetch" href="/blog/assets/js/5.749b5766.js"><link rel="prefetch" href="/blog/assets/js/50.536ead0a.js"><link rel="prefetch" href="/blog/assets/js/51.3db9c99c.js"><link rel="prefetch" href="/blog/assets/js/6.0d6aaf60.js"><link rel="prefetch" href="/blog/assets/js/7.3a7abaf0.js"><link rel="prefetch" href="/blog/assets/js/8.47db0b10.js"><link rel="prefetch" href="/blog/assets/js/9.2cbba214.js">
+    <link rel="stylesheet" href="/blog/assets/css/0.styles.5bfee496.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container no-sidebar" data-v-1156296a><div data-v-1156296a><div id="loader-wrapper" class="loading-wrapper" data-v-d48f4d20 data-v-1156296a data-v-1156296a><div class="loader-main" data-v-d48f4d20><div data-v-d48f4d20></div><div data-v-d48f4d20></div><div data-v-d48f4d20></div><div data-v-d48f4d20></div></div> <!----> <!----></div> <div class="password-shadow password-wrapper-out" style="display:none;" data-v-4e82dffc data-v-1156296a data-v-1156296a><h3 class="title" data-v-4e82dffc data-v-4e82dffc>liuhao</h3> <p class="description" data-v-4e82dffc data-v-4e82dffc></p> <label id="box" class="inputBox" data-v-4e82dffc data-v-4e82dffc><input type="password" value="" data-v-4e82dffc> <span data-v-4e82dffc>Konck! Knock!</span> <button data-v-4e82dffc>OK</button></label> <div class="footer" data-v-4e82dffc data-v-4e82dffc><span data-v-4e82dffc><i class="iconfont reco-theme" data-v-4e82dffc></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-4e82dffc>vuePress-theme-reco</a></span> <span data-v-4e82dffc><i class="iconfont reco-copyright" data-v-4e82dffc></i> <a data-v-4e82dffc><span data-v-4e82dffc>liuhao</span>
+            
+          <span data-v-4e82dffc>2019 - </span>
+          2022
+        </a></span></div></div> <div class="hide" data-v-1156296a><header class="navbar" data-v-1156296a><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/blog/" class="home-link router-link-active"><img src="/blog/logo.png" alt="liuhao" class="logo"> <span class="site-name">liuhao</span></a> <div class="links"><div class="color-picker"><a class="color-button"><i class="iconfont reco-color"></i></a> <div class="color-picker-menu" style="display:none;"><div class="mode-options"><h4 class="title">Choose mode</h4> <ul class="color-mode-options"><li class="dark">dark</li><li class="auto active">auto</li><li class="light">light</li></ul></div></div></div> <div class="search-box"><i class="iconfont reco-search"></i> <input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/blog/" class="nav-link"><i class="iconfont reco-home"></i>
+  Home
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-category"></i>
+      Category
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/categories/css/" class="nav-link"><i class="undefined"></i>
+  css
+</a></li><li class="dropdown-item"><!----> <a href="/blog/categories/js/" class="nav-link"><i class="undefined"></i>
+  js
+</a></li><li class="dropdown-item"><!----> <a href="/blog/categories/nginx/" class="nav-link"><i class="undefined"></i>
+  nginx
+</a></li><li class="dropdown-item"><!----> <a href="/blog/categories/node/" class="nav-link"><i class="undefined"></i>
+  node
+</a></li><li class="dropdown-item"><!----> <a href="/blog/categories/react/" class="nav-link"><i class="undefined"></i>
+  react
+</a></li><li class="dropdown-item"><!----> <a href="/blog/categories/python/" class="nav-link"><i class="undefined"></i>
+  python
+</a></li><li class="dropdown-item"><!----> <a href="/blog/categories/vue/" class="nav-link"><i class="undefined"></i>
+  vue
+</a></li><li class="dropdown-item"><!----> <a href="/blog/categories/vue3/" class="nav-link"><i class="undefined"></i>
+  vue3
+</a></li><li class="dropdown-item"><!----> <a href="/blog/categories/wx/" class="nav-link"><i class="undefined"></i>
+  wx
+</a></li></ul></div></div><div class="nav-item"><a href="/blog/tag/" class="nav-link"><i class="iconfont reco-tag"></i>
+  Tag
+</a></div><div class="nav-item"><a href="/blog/timeline/" class="nav-link"><i class="iconfont reco-date"></i>
+  TimeLine
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-message"></i>
+      Github
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://github.com/caishuxueqianliu" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont reco-github"></i>
+  GitHub
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://gitee.com/caishuxueqianliu" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont reco-github"></i>
+  Gitee
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask" data-v-1156296a></div> <aside class="sidebar" data-v-1156296a><div class="personal-info-wrapper" data-v-828910c6 data-v-1156296a><img src="/blog/avatar.png" alt="author-avatar" class="personal-img" data-v-828910c6> <h3 class="name" data-v-828910c6>
+    liuhao
+  </h3> <div class="num" data-v-828910c6><div data-v-828910c6><h3 data-v-828910c6>37</h3> <h6 data-v-828910c6>Articles</h6></div> <div data-v-828910c6><h3 data-v-828910c6>19</h3> <h6 data-v-828910c6>Tags</h6></div></div> <ul class="social-links" data-v-828910c6></ul> <hr data-v-828910c6></div> <nav class="nav-links"><div class="nav-item"><a href="/blog/" class="nav-link"><i class="iconfont reco-home"></i>
+  Home
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-category"></i>
+      Category
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/categories/css/" class="nav-link"><i class="undefined"></i>
+  css
+</a></li><li class="dropdown-item"><!----> <a href="/blog/categories/js/" class="nav-link"><i class="undefined"></i>
+  js
+</a></li><li class="dropdown-item"><!----> <a href="/blog/categories/nginx/" class="nav-link"><i class="undefined"></i>
+  nginx
+</a></li><li class="dropdown-item"><!----> <a href="/blog/categories/node/" class="nav-link"><i class="undefined"></i>
+  node
+</a></li><li class="dropdown-item"><!----> <a href="/blog/categories/react/" class="nav-link"><i class="undefined"></i>
+  react
+</a></li><li class="dropdown-item"><!----> <a href="/blog/categories/python/" class="nav-link"><i class="undefined"></i>
+  python
+</a></li><li class="dropdown-item"><!----> <a href="/blog/categories/vue/" class="nav-link"><i class="undefined"></i>
+  vue
+</a></li><li class="dropdown-item"><!----> <a href="/blog/categories/vue3/" class="nav-link"><i class="undefined"></i>
+  vue3
+</a></li><li class="dropdown-item"><!----> <a href="/blog/categories/wx/" class="nav-link"><i class="undefined"></i>
+  wx
+</a></li></ul></div></div><div class="nav-item"><a href="/blog/tag/" class="nav-link"><i class="iconfont reco-tag"></i>
+  Tag
+</a></div><div class="nav-item"><a href="/blog/timeline/" class="nav-link"><i class="iconfont reco-date"></i>
+  TimeLine
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-message"></i>
+      Github
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://github.com/caishuxueqianliu" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont reco-github"></i>
+  GitHub
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://gitee.com/caishuxueqianliu" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont reco-github"></i>
+  Gitee
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div> <!----></nav> <!----> </aside> <div class="password-shadow password-wrapper-in" style="display:none;" data-v-4e82dffc data-v-1156296a><h3 class="title" data-v-4e82dffc data-v-4e82dffc>vuex状态管理</h3> <!----> <label id="box" class="inputBox" data-v-4e82dffc data-v-4e82dffc><input type="password" value="" data-v-4e82dffc> <span data-v-4e82dffc>Konck! Knock!</span> <button data-v-4e82dffc>OK</button></label> <div class="footer" data-v-4e82dffc data-v-4e82dffc><span data-v-4e82dffc><i class="iconfont reco-theme" data-v-4e82dffc></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-4e82dffc>vuePress-theme-reco</a></span> <span data-v-4e82dffc><i class="iconfont reco-copyright" data-v-4e82dffc></i> <a data-v-4e82dffc><span data-v-4e82dffc>liuhao</span>
+            
+          <span data-v-4e82dffc>2019 - </span>
+          2022
+        </a></span></div></div> <div data-v-1156296a><main class="page" style="padding-right:0;"><section><div class="page-title"><h1 class="title">vuex状态管理</h1> <div data-v-1ff7123e><i class="iconfont reco-account" data-v-1ff7123e><span data-v-1ff7123e>liuhao</span></i> <i class="iconfont reco-date" data-v-1ff7123e><span data-v-1ff7123e>12/15/2019</span></i> <!----> <i class="tags iconfont reco-tag" data-v-1ff7123e><span class="tag-item" data-v-1ff7123e>vuex</span></i></div></div> <div class="theme-reco-content content__default"><h1 id="vuex状态管理"><a href="#vuex状态管理" class="header-anchor">#</a> vuex状态管理</h1> <h2 id="基本属性"><a href="#基本属性" class="header-anchor">#</a> 基本属性</h2> <div class="custom-block tip"><p class="title">属性</p><p>state 存放状态<br>
+mutations state成员操作<br>
+getters 加工state成员给外界<br>
+actions 异步操作<br>
+modules 模块化状态管理</p></div><h3 id="state"><a href="#state" class="header-anchor">#</a> state</h3> <div class="custom-block tip"><p class="title">state</p><p>state 不用说，存放数据</p></div><div class="language-js line-numbers-mode"><pre class="language-js"><code><span class="token comment">// 定义</span>
+state<span class="token operator">:</span> <span class="token punctuation">{</span>  
+    token<span class="token operator">:</span> window<span class="token punctuation">.</span>localStorage<span class="token punctuation">.</span><span class="token function">getItem</span><span class="token punctuation">(</span><span class="token string">'token'</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token comment">//token</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+<span class="token comment">// 组件中使用方式两种</span>
+<span class="token keyword">this</span><span class="token punctuation">.</span>$store<span class="token punctuation">.</span>state<span class="token punctuation">.</span>token
+  <span class="token keyword">import</span> <span class="token punctuation">{</span> mapState <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'vuex'</span>
+computed<span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token operator">...</span><span class="token function">mapState</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+        <span class="token function-variable function">token</span><span class="token operator">:</span> <span class="token parameter">state</span> <span class="token operator">=&gt;</span> state<span class="token punctuation">.</span>token<span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+<span class="token comment">// ...mapState({a:'token'}) 其他三种同理 改名</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br></div></div><h3 id="mutations"><a href="#mutations" class="header-anchor">#</a> mutations</h3> <div class="custom-block tip"><p class="title">mutations</p><p>mutations是操作state数据的方法的集合，比如对该数据的修改、增加、删除等等。</p></div><div class="language-js line-numbers-mode"><pre class="language-js"><code>  mutations<span class="token operator">:</span> <span class="token punctuation">{</span>   
+   <span class="token function">editToken</span> <span class="token punctuation">(</span><span class="token parameter">state<span class="token punctuation">,</span> token</span><span class="token punctuation">)</span> <span class="token punctuation">{</span> <span class="token comment">//设置参数</span>
+      state<span class="token punctuation">.</span>token <span class="token operator">=</span> token<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span> 
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+<span class="token comment">// 组件中去调用执行这个方法</span>
+
+<span class="token keyword">this</span><span class="token punctuation">.</span>$store<span class="token punctuation">.</span><span class="token function">commit</span><span class="token punctuation">(</span><span class="token string">'editToken'</span><span class="token punctuation">,</span>token<span class="token punctuation">)</span> <span class="token comment">// 方法，参数</span>
+或者写全
+
+<span class="token keyword">this</span><span class="token punctuation">.</span>$store<span class="token punctuation">.</span><span class="token function">commit</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+    type<span class="token operator">:</span><span class="token string">'edit'</span><span class="token punctuation">,</span> <span class="token comment">// mutations 中的方法名</span>
+    payload<span class="token operator">:</span><span class="token punctuation">{</span>     <span class="token comment">// 参数</span>
+        age<span class="token operator">:</span><span class="token number">15</span><span class="token punctuation">,</span>
+        sex<span class="token operator">:</span><span class="token string">'男'</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+<span class="token comment">// 或者mapMutations方式</span>
+
+<span class="token keyword">import</span> <span class="token punctuation">{</span> mapMutations <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'vuex'</span>
+   methods<span class="token operator">:</span> <span class="token punctuation">{</span>
+      <span class="token operator">...</span><span class="token function">mapMutations</span><span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token string">'editToken'</span><span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token comment">//其他地方调用即可</span>
+    <span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br></div></div><p>::: warnning 注意
+注意的是，对于增删state中的成员，为了配合Vue的响应式数据，我们在Mutations的方法中，应当使用Vue提供的方法来进行操作。
+:::</p> <div class="language-js line-numbers-mode"><pre class="language-js"><code>Vue<span class="token punctuation">.</span><span class="token function">set</span><span class="token punctuation">(</span>state<span class="token punctuation">,</span><span class="token string">&quot;age&quot;</span><span class="token punctuation">,</span><span class="token number">15</span><span class="token punctuation">)</span>   <span class="token comment">//增</span>
+Vue<span class="token punctuation">.</span><span class="token function">delete</span><span class="token punctuation">(</span>state<span class="token punctuation">,</span><span class="token string">'age'</span><span class="token punctuation">)</span>   <span class="token comment">//删</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><h3 id="getters"><a href="#getters" class="header-anchor">#</a> getters</h3> <div class="custom-block tip"><p class="title">gettets</p><p>Getters可以对state中的成员加工后传递给外界
+Getters中的方法有两个默认参数
+相当于全局computed属性
+state 当前VueX对象中的状态对象
+getters 当前getters对象，用于将getters下的其他getter拿来用</p></div><div class="language-js line-numbers-mode"><pre class="language-js"><code>getters<span class="token operator">:</span><span class="token punctuation">{</span>
+    <span class="token function">nameInfo</span><span class="token punctuation">(</span><span class="token parameter">state</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token keyword">return</span> <span class="token string">&quot;姓名:&quot;</span><span class="token operator">+</span>state<span class="token punctuation">.</span>name
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token function">fullInfo</span><span class="token punctuation">(</span><span class="token parameter">state<span class="token punctuation">,</span> getters</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token keyword">return</span> getters<span class="token punctuation">.</span>nameInfo<span class="token operator">+</span><span class="token string">'年龄:'</span><span class="token operator">+</span>state<span class="token punctuation">.</span>age
+    <span class="token punctuation">}</span>  
+<span class="token punctuation">}</span>
+<span class="token comment">// 组件中调用两种</span>
+
+<span class="token keyword">this</span><span class="token punctuation">.</span>$store<span class="token punctuation">.</span>getters<span class="token punctuation">.</span>fullInfo
+<span class="token keyword">import</span> <span class="token punctuation">{</span> mapGetters <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'vuex'</span>
+computed<span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token operator">...</span><span class="token function">mapGetters</span><span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token string">'fullInfo'</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br></div></div><h3 id="actions"><a href="#actions" class="header-anchor">#</a> actions</h3> <div class="custom-block tip"><p class="title">actions</p><p>由于直接在Mutations方法中进行异步操作，将会引起数据失效。所以提供了Actions来专门进行异步操作，最终提交Mutations方法。
+Actions中的方法有两个默认参数
+context 上下文(相当于箭头函数中的this)对象
+payload 挂载参数</p></div><div class="language-js line-numbers-mode"><pre class="language-js"><code>actions<span class="token operator">:</span><span class="token punctuation">{</span>
+    <span class="token function">aEdit</span><span class="token punctuation">(</span><span class="token parameter">context<span class="token punctuation">,</span> token</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token function">setTimeout</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">=&gt;</span><span class="token punctuation">{</span>
+            context<span class="token punctuation">.</span><span class="token function">commit</span><span class="token punctuation">(</span><span class="token string">'edit'</span><span class="token punctuation">,</span>token<span class="token punctuation">)</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span><span class="token number">2000</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+<span class="token comment">// 或者</span>
+  actions<span class="token operator">:</span><span class="token punctuation">{</span>  
+<span class="token function">recordBaName</span><span class="token punctuation">(</span><span class="token parameter"><span class="token punctuation">{</span>commit<span class="token punctuation">}</span><span class="token punctuation">,</span> baName</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token function">commit</span><span class="token punctuation">(</span><span class="token string">'updataBaName'</span><span class="token punctuation">,</span> baName<span class="token punctuation">)</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token keyword">async</span> <span class="token function">getAddress</span><span class="token punctuation">(</span><span class="token parameter"><span class="token punctuation">{</span>commit<span class="token punctuation">,</span>state<span class="token punctuation">}</span></span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+   <span class="token keyword">const</span> geohash<span class="token operator">=</span>state<span class="token punctuation">.</span>latitude<span class="token operator">+</span><span class="token string">','</span><span class="token operator">+</span>state<span class="token punctuation">.</span>longitude
+   <span class="token keyword">const</span> result<span class="token operator">=</span><span class="token keyword">await</span> <span class="token function">reqAddress</span><span class="token punctuation">(</span>geohash<span class="token punctuation">)</span>
+ <span class="token keyword">const</span> address<span class="token operator">=</span>result<span class="token punctuation">.</span>data<span class="token punctuation">.</span>data
+ <span class="token function">commit</span><span class="token punctuation">(</span><span class="token string">'receive_address'</span><span class="token punctuation">,</span><span class="token punctuation">{</span>address<span class="token punctuation">}</span><span class="token punctuation">)</span>
+   <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+<span class="token comment">// 组件中调用两种方式</span>
+<span class="token keyword">this</span><span class="token punctuation">.</span>$store<span class="token punctuation">.</span><span class="token function">dispatch</span><span class="token punctuation">(</span><span class="token string">'aEdit'</span><span class="token punctuation">,</span><span class="token punctuation">{</span>token<span class="token operator">:</span><span class="token string">'test'</span><span class="token punctuation">}</span><span class="token punctuation">)</span>
+    <span class="token keyword">import</span> <span class="token punctuation">{</span> mapActions<span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">&quot;vuex&quot;</span><span class="token punctuation">;</span>
+    methods<span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token operator">...</span><span class="token function">mapActions</span><span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token string">'aEdit'</span><span class="token punctuation">]</span><span class="token punctuation">)</span>  
+<span class="token comment">// 相当于this.aEdit({token:'test'})映射为</span>
+<span class="token comment">// this.$store.dispatch('aEdit',{token:'test'})</span>
+    <span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br></div></div><h3 id="modules"><a href="#modules" class="header-anchor">#</a> modules</h3> <div class="custom-block tip"><p class="title">modules</p><p>当项目庞大，状态非常多时，可以采用模块化管理模式。Vuex 允许我们将 store 分割成模块（module）。每个模块拥有自己的 state，mutations,getters,actions、甚至是嵌套子模块——从上至下进行同样方式的分割。</p></div><div class="language-js line-numbers-mode"><pre class="language-js"><code>models<span class="token operator">:</span><span class="token punctuation">{</span>
+    a<span class="token operator">:</span><span class="token punctuation">{</span>
+        state<span class="token operator">:</span><span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+        getters<span class="token operator">:</span><span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token operator">...</span><span class="token punctuation">.</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+<span class="token keyword">this</span><span class="token punctuation">.</span>$store<span class="token punctuation">.</span>state<span class="token punctuation">.</span>a <span class="token comment">//是models中的a 而不是根state中的a 前者覆盖后者</span>
+<span class="token keyword">this</span><span class="token punctuation">.</span>$store<span class="token punctuation">.</span><span class="token function">commit</span><span class="token punctuation">(</span><span class="token string">'editKey'</span><span class="token punctuation">)</span>
+<span class="token keyword">this</span><span class="token punctuation">.</span>$store<span class="token punctuation">.</span><span class="token function">dispatch</span><span class="token punctuation">(</span><span class="token string">'aEditKey'</span><span class="token punctuation">)</span>
+<span class="token comment">//组件中提交会自动执行所有模块内的对应type的方法</span>
+模块中mutations和getters中的方法接受的第一个参数是自身局部模块内部的state
+
+modules<span class="token operator">:</span><span class="token punctuation">{</span>
+    a<span class="token operator">:</span><span class="token punctuation">{</span>
+        state<span class="token operator">:</span><span class="token punctuation">{</span>key<span class="token operator">:</span><span class="token number">5</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+        mutations<span class="token operator">:</span><span class="token punctuation">{</span>
+            <span class="token function">editKey</span><span class="token punctuation">(</span><span class="token parameter">state</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+                state<span class="token punctuation">.</span>key <span class="token operator">=</span> <span class="token number">9</span>
+            <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token operator">...</span><span class="token punctuation">.</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+getters中方法的第三个参数是根节点状态
+
+modules<span class="token operator">:</span><span class="token punctuation">{</span>
+    a<span class="token operator">:</span><span class="token punctuation">{</span>
+        state<span class="token operator">:</span><span class="token punctuation">{</span>key<span class="token operator">:</span><span class="token number">5</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+        getters<span class="token operator">:</span><span class="token punctuation">{</span>
+            <span class="token function">getKeyCount</span><span class="token punctuation">(</span><span class="token parameter">state<span class="token punctuation">,</span>getter<span class="token punctuation">,</span>rootState</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+                <span class="token keyword">return</span>  rootState<span class="token punctuation">.</span>key <span class="token operator">+</span> state<span class="token punctuation">.</span>key
+            <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token operator">...</span><span class="token punctuation">.</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+<span class="token comment">// actions中方法获取局部模块状态是context.state,根节点状态是context.rootState</span>
+
+modules<span class="token operator">:</span><span class="token punctuation">{</span>
+    a<span class="token operator">:</span><span class="token punctuation">{</span>
+        state<span class="token operator">:</span><span class="token punctuation">{</span>key<span class="token operator">:</span><span class="token number">5</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+        actions<span class="token operator">:</span><span class="token punctuation">{</span>
+            <span class="token function">aEidtKey</span><span class="token punctuation">(</span><span class="token parameter">context</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+                <span class="token keyword">if</span><span class="token punctuation">(</span>context<span class="token punctuation">.</span>state<span class="token punctuation">.</span>key <span class="token operator">===</span> context<span class="token punctuation">.</span>rootState<span class="token punctuation">.</span>key<span class="token punctuation">)</span><span class="token punctuation">{</span>
+                    context<span class="token punctuation">.</span><span class="token function">commit</span><span class="token punctuation">(</span><span class="token string">'editKey'</span><span class="token punctuation">)</span>
+                <span class="token punctuation">}</span>
+            <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token operator">...</span><span class="token punctuation">.</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br><span class="line-number">52</span><br></div></div><div class="custom-block warning"><p class="title">注意</p><p>moudles 使用</p></div><div class="language-js line-numbers-mode"><pre class="language-js"><code><span class="token comment">// 定义时</span>
+<span class="token keyword">const</span> account <span class="token operator">=</span> <span class="token punctuation">{</span>
+  namespaced<span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+  state<span class="token operator">:</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+  mutations<span class="token operator">:</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+  getters<span class="token operator">:</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+  actions<span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token function">recordToken</span><span class="token punctuation">(</span><span class="token parameter"><span class="token punctuation">{</span>commit<span class="token punctuation">,</span>dispatch<span class="token punctuation">}</span></span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+<span class="token comment">// 调用</span>
+<span class="token operator">...</span><span class="token function">mapActions</span><span class="token punctuation">(</span><span class="token string">'account'</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token string">'recordToken'</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br></div></div></div></section> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">Last Updated: </span> <span class="time">1/17/2022, 2:48:49 PM</span></div></footer> <!----> <div class="comments-wrapper"><!----></div> <ul class="side-bar sub-sidebar-wrapper" style="width:0;" data-v-70334359></ul></main> <!----></div></div></div></div><div class="global-ui"><div class="back-to-ceiling" style="right:1rem;bottom:6rem;width:2.5rem;height:2.5rem;border-radius:.25rem;line-height:2.5rem;display:none;" data-v-c6073ba8 data-v-c6073ba8><svg t="1574745035067" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5404" class="icon" data-v-c6073ba8><path d="M526.60727968 10.90185116a27.675 27.675 0 0 0-29.21455937 0c-131.36607665 82.28402758-218.69155461 228.01873535-218.69155402 394.07834331a462.20625001 462.20625001 0 0 0 5.36959153 69.94390903c1.00431239 6.55289093-0.34802892 13.13561351-3.76865779 18.80351572-32.63518765 54.11355614-51.75690182 118.55860487-51.7569018 187.94566865a371.06718723 371.06718723 0 0 0 11.50484808 91.98906777c6.53300375 25.50556257 41.68394495 28.14064038 52.69160883 4.22606766 17.37162448-37.73630017 42.14135425-72.50938081 72.80769204-103.21549295 2.18761121 3.04276886 4.15646224 6.24463696 6.40373557 9.22774369a1871.4375 1871.4375 0 0 0 140.04691725 5.34970492 1866.36093723 1866.36093723 0 0 0 140.04691723-5.34970492c2.24727335-2.98310674 4.21612437-6.18497483 6.3937923-9.2178004 30.66633723 30.70611158 55.4360664 65.4791928 72.80769147 103.21549355 11.00766384 23.91457269 46.15860503 21.27949489 52.69160879-4.22606768a371.15156223 371.15156223 0 0 0 11.514792-91.99901164c0-69.36717486-19.13165746-133.82216804-51.75690182-187.92578088-3.42062944-5.66790279-4.76302748-12.26056868-3.76865837-18.80351632a462.20625001 462.20625001 0 0 0 5.36959269-69.943909c-0.00994388-166.08943902-87.32547796-311.81420293-218.6915546-394.09823051zM605.93803103 357.87693858a93.93749974 93.93749974 0 1 1-187.89594924 6.1e-7 93.93749974 93.93749974 0 0 1 187.89594924-6.1e-7z" p-id="5405" data-v-c6073ba8></path><path d="M429.50777625 765.63860547C429.50777625 803.39355007 466.44236686 1000.39046097 512.00932183 1000.39046097c45.56695499 0 82.4922232-197.00623328 82.5015456-234.7518555 0-37.75494459-36.9345906-68.35043303-82.4922232-68.34111062-45.57627738-0.00932239-82.52019037 30.59548842-82.51086798 68.34111062z" p-id="5406" data-v-c6073ba8></path></svg></div></div></div>
+    <script src="/blog/assets/js/app.8df89506.js" defer></script><script src="/blog/assets/js/3.8945a4b1.js" defer></script><script src="/blog/assets/js/1.a26389cc.js" defer></script><script src="/blog/assets/js/41.b9c88554.js" defer></script>
+  </body>
+</html>

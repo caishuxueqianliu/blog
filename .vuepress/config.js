@@ -21,23 +21,23 @@ module.exports = {
     ["script", { src: "/assets/js/bodyClick.js" }]
   ],
   "theme": "reco",
+  "locales": {
+    '/': {
+      lang: 'zh-CN'
+    }
+  },
   "themeConfig": {
     "nav": [
       {
-        "text": "Home",
+        "text": "主页",
         "link": "/",
         "icon": "reco-home"
       },
       {
-        "text": "TimeLine",
-        "link": "/timeline/",
-        "icon": "reco-date"
+        "text": "随笔",
+        "link": "/doc/",
+        "icon": "reco-document"
       },
-      // {
-      //   "text": "Test",
-      //   "link": "/test/",
-      //   "icon": "reco-date"
-      // },
       // {
       //   "text": "Category",
       //   "icon": "reco-category",

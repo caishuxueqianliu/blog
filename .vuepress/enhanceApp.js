@@ -5,7 +5,7 @@ import ElementUI from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css'
 import 'element-ui/lib/theme-chalk/display.css'
 
-// import Test from './components/test.vue'
+// import Test from './components/doc.vue'
 
 export default ({ Vue }) => {
   // Vue.component('Test', Test)

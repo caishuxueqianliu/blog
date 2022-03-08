@@ -56,16 +56,11 @@ module.exports = {
       //     },
       //   ]
       // },
-      // {
-      //   "text": "Docs",
-      //   "icon": "reco-message",
-      //   "items": [
-      //     {
-      //       "text": "vuepress-reco",
-      //       "link": "/docs/theme-reco/"
-      //     }
-      //   ]
-      // },
+      {
+        "text": "项目展示",
+        "icon": "reco-message",
+        "link": "https://www.liuhao.website",
+      },
       {
         "text": "Github",
         "icon": "reco-message",
@@ -78,7 +73,7 @@ module.exports = {
             {
               "text": "Gitee",
               "link": "https://gitee.com/caishuxueqianliu",
-              "icon": "reco-github"
+              "icon": "reco-mayun"
             }
         ]
       }
